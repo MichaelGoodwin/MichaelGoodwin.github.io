@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --dir /dist/portfolio/ --branch master"
+    "predeploy": "ng build --prod",
+    "deploy": "angular-cli-ghpages --dir /dist/portfolio/ --branch master"
   },
   "private": true,
   "dependencies": {
