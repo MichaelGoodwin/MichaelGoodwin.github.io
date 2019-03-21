@@ -1,0 +1,16 @@
+.card-labeled{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-img-top{
+  max-height: 225px;
+  overflow: hidden;
+}
+
+.alt-text{
+  font-weight: 500;
+  font-size: 1.75rem;
+  height: 225px;
+}

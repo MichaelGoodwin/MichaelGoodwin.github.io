@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="center-text">
+    <h2>Side Projects</h2>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div
+      *ngFor="let project of projects"
+      class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+    >
+      <div class="card">
+        <img class="card-img-top alt-text" [alt]="project.title" [src]="project.image"/>
+        <div class="card-body">
+          <p class="card-text card-labeled">
+            <b>Languages:</b> <span>{{ project.languages.join(", ") }}</span>
+          </p>
+          <p class="card-text">
+            {{ project.description }}
+          </p>
+        </div>
+        <div class="card-footer center-text">
+          <a [routerLink]="['/project/' + project.id]" class="btn btn-success">View project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
