@@ -22,7 +22,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/404.html",
-              { "glob": "**/*", "input": "../pdf/", "output": "/pdf"}
+              { "glob": "**/*", "input": "../pdf/", "output": "/pdf"},
+              { "glob": "**/*", "input": "../assets/", "output": "/assets"}
             ],
             "styles": [
               "src/styles.css"
