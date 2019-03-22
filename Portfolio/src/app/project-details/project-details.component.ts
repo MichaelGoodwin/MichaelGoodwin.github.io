@@ -7,7 +7,10 @@ import { ProjectContainerDirective } from '../directives/project-container.direc
 
 @Component({
   selector: 'app-project-details',
-  template: `<ng-container appProjectContainer></ng-container>` // Used to display current project component dynamically
+  // Used to display current project component dynamically
+  template: `<div class="container">
+              <ng-container appProjectContainer></ng-container>
+            </div>`
 })
 export class ProjectDetailsComponent implements OnInit {
   private project: Project;
@@ -24,6 +27,7 @@ export class ProjectDetailsComponent implements OnInit {
 
     if (!this.project) {
       this.router.navigate(['/projects']);
+      return;
     }
 
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.project.component);
