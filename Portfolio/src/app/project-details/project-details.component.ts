@@ -23,7 +23,7 @@ export class ProjectDetailsComponent implements OnInit {
     this.project = this.projectService.getProjectById(id);
 
     if (!this.project) {
-      this.router.navigate(['/']);
+      this.router.navigate(['/projects']);
     }
 
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.project.component);
