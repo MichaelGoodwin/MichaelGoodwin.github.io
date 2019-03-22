@@ -6,7 +6,7 @@ import { Lightbox, IAlbum, LightboxConfig } from 'ngx-lightbox';
   templateUrl: './mello-trainer.component.html',
   styleUrls: ['./mello-trainer.component.css']
 })
-export class MelloTrainerComponent implements OnInit {
+export class MelloTrainerComponent implements OnInit, OnDestroy {
   public images: string[] = [
     '/assets/imgs/MelloTrainer/card.png',
     '/assets/imgs/MelloTrainer/vehicle-options.png',
@@ -28,6 +28,10 @@ export class MelloTrainerComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy(): void {
+    this.lightbox.close();
   }
 
   open(index: number): void {
