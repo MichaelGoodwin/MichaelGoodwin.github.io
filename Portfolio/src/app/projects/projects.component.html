@@ -10,12 +10,13 @@
       *ngFor="let project of projects"
       class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12"
     >
-      <div class="card">
+      <div class="card bg-dark">
         <img class="card-img-top alt-text" [alt]="project.title" [src]="project.image"/>
         <div class="card-body">
-          <p class="card-text card-labeled">
-            <b>Languages:</b> <span>{{ project.languages.join(", ") }}</span>
+          <p class="card-text center-text bold">
+            {{ project.languages.join(", ") }}
           </p>
+          <hr/>
           <p class="card-text">
             {{ project.description }}
           </p>

@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%;
+  background: #1F1F1F;
+  color: white;
+}
+
 body{
   padding-top: 25px;
 }
@@ -7,6 +13,10 @@ body{
   height: 100% !important;
 }
 
-.center-text{
+.center-text {
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
 }
