@@ -32,9 +32,9 @@
   <h1>Gallery</h1>
   <hr/>
   <div class="image-gallery">
-      <div class="image-container" *ngFor="let image of images; let i=index">
-          <img [src]="image" (click)="open(i)"/>
-      </div>
+    <div class="image-container" *ngFor="let image of images; let i=index">
+        <img [src]="image" (click)="open(i)"/>
     </div>
-    <hr/>
+  </div>
+  <hr/>
 </div>
