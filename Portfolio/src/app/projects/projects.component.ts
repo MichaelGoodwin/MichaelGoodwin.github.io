@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../services/project/Project';
 import { ProjectService } from '../services/project/project.service';
+import { ProjectCategory } from '../services/project/ProjectCategory';
 
 @Component({
   selector: 'app-projects',
@@ -8,10 +8,15 @@ import { ProjectService } from '../services/project/project.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Project[];
-  constructor(private projectService: ProjectService) { }
+  categories: IterableIterator<ProjectCategory>;
 
-  ngOnInit() {
-    this.projects = this.projectService.getProjects();
+  constructor(private projectService: ProjectService) {
+    this.categories = projectService.getCategories();
+  }
+
+  ngOnInit() { }
+
+  getProjects(category) {
+    return this.projectService.getProjectsByCategory(category);
   }
 }
