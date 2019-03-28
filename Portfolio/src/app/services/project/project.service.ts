@@ -22,12 +22,12 @@ export class ProjectService {
     return PROJECTS.filter(p => p.category === category);
   }
 
-  getCategories(): IterableIterator<ProjectCategory> {
+  getCategories() {
     const c = new Set<ProjectCategory>();
     for (const p of PROJECTS) {
       c.add(p.category);
     }
 
-    return c.values();
+    return Array.from(c.values());
   }
 }

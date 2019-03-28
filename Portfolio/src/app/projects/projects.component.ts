@@ -8,7 +8,7 @@ import { ProjectCategory } from '../services/project/ProjectCategory';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  categories: IterableIterator<ProjectCategory>;
+  categories: Array<ProjectCategory>;
 
   constructor(private projectService: ProjectService) {
     this.categories = projectService.getCategories();
