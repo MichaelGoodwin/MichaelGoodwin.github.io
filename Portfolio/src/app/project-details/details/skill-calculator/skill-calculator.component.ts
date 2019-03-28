@@ -27,6 +27,8 @@ export class SkillCalculatorComponent implements OnInit, OnDestroy {
 
     // set default config
     this.lightboxConfig.fadeDuration = 1;
+    this.lightboxConfig.centerVertically = true;
+    this.lightboxConfig.fitImageInViewPort = true;
    }
 
   ngOnInit() {
