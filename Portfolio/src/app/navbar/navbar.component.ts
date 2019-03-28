@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit,OnDestroy {
+export class NavbarComponent implements OnInit, OnDestroy {
   navbarCollapsed = true;
   private sub: Subscription;
 
