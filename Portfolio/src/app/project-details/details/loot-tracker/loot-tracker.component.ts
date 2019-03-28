@@ -22,7 +22,6 @@ export class LootTrackerComponent implements OnInit, OnDestroy {
     private lightbox: Lightbox,
     private lightboxConfig: LightboxConfig) {
     for (const image of this.images) {
-      console.log(image);
       const img = image[0];
       const caption = image.length > 1 ? image[1] : '';
       this.album.push({src: img, thumb: img, caption});
