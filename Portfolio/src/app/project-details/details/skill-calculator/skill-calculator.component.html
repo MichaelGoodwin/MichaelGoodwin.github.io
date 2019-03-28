@@ -1,0 +1,32 @@
+<div class="sub-container">
+    <div class="center-text">
+      <h1 class>Skill Calculator Expansion</h1>
+      <hr/>
+  
+      <p>For this project my goal was to expand upon the existing <a href="https://www.runelite.net" target="_blank">RuneLite</a> "SkillCalculator" plugin by adding Planner and Banked Experience functionality. Eventually this was decided agaisnt as this would require a lot of maintenance and there are websites that offer similar tools.</p>
+    </div>
+    
+  
+    <div class="center-text">
+      <a class="btn btn-success center-text" href="https://github.com/runelite/runelite/pull/3719/files" target="_blank">View the source code</a>
+    </div>
+  
+    <h1>Banked Experience</h1>
+    <p>
+      The main purpose of this project was to add a Banked Experience calculator to the client. To accomplish this i needed to read the contents of a players bank and search for items used to train specific skills. Certain items can be used in multiple activities which reward different experience values so i also needed to allow the player to select which activity they are doing, defaulting to first one. Some items are also turned into other items which means this had to be recursive friendly.
+    </p>
+
+    <h1>Planner</h1>
+    <p>
+      In order to add the Planner functionality i copied the existing calculator UI and added a right-click menu for specifying the quantity. The planner won't let the player select activities they don't have the level for. The existing target level and target experience boxes are updated to reflect these changes.
+    </p>
+  
+    <h1>Gallery</h1>
+    <hr/>
+    <div class="image-gallery">
+      <div class="image-container" *ngFor="let image of images; let i=index">
+          <img [src]="image" (click)="open(i)"/>
+      </div>
+    </div>
+    <hr/>
+  </div>
