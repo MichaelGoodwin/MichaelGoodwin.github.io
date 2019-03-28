@@ -4,6 +4,7 @@ import { MelloTrainerComponent } from 'src/app/project-details/details/mello-tra
 import { RPDeathComponent } from 'src/app/project-details/details/rpdeath/rpdeath.component';
 import { SkillCalculatorComponent } from 'src/app/project-details/details/skill-calculator/skill-calculator.component';
 import { LootTrackerComponent } from 'src/app/project-details/details/loot-tracker/loot-tracker.component';
+import { KeptItemsComponent } from 'src/app/project-details/details/kept-items/kept-items.component';
 
 const imageFolder = '/assets/imgs/';
 
@@ -16,4 +17,6 @@ export default [
     'Expands upon the existing RuneLite "SkillCalculator" plugin by adding Planner and Banked Experience functionality'),
   new Project(LootTrackerComponent, 'Loot Tracker', imageFolder + 'LootTracker/card.png', ['java'],
     'Records loot received from monsters, players, and activities and displays it in a side panel'),
+  new Project(KeptItemsComponent, 'Kept Items', imageFolder + 'KeptItems/card.png', ['java'],
+    'Reworks the existing Items Kept on Death interface so that it is more accurate and interactive'),
 ];

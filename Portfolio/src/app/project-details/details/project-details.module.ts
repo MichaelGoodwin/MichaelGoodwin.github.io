@@ -5,6 +5,7 @@ import { MelloTrainerComponent } from './mello-trainer/mello-trainer.component';
 import { RPDeathComponent } from './rpdeath/rpdeath.component';
 import { SkillCalculatorComponent } from './skill-calculator/skill-calculator.component';
 import { LootTrackerComponent } from './loot-tracker/loot-tracker.component';
+import { KeptItemsComponent } from './kept-items/kept-items.component';
 
 @NgModule({
   imports: [
@@ -15,13 +16,15 @@ import { LootTrackerComponent } from './loot-tracker/loot-tracker.component';
     MelloTrainerComponent,
     RPDeathComponent,
     SkillCalculatorComponent,
-    LootTrackerComponent
+    LootTrackerComponent,
+    KeptItemsComponent
   ],
   entryComponents: [
     MelloTrainerComponent,
     RPDeathComponent,
     SkillCalculatorComponent,
-    LootTrackerComponent
+    LootTrackerComponent,
+    KeptItemsComponent
   ]
 })
 export class ProjectDetailsModule { }
