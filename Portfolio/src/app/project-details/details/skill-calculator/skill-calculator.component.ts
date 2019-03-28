@@ -7,21 +7,23 @@ import { IAlbum, Lightbox, LightboxConfig } from 'ngx-lightbox';
   styleUrls: ['../details.css', './skill-calculator.component.css']
 })
 export class SkillCalculatorComponent implements OnInit, OnDestroy {
-  public images: string[] = [
-    '/assets/imgs/SkillCalculator/card.png',
-    '/assets/imgs/SkillCalculator/agility.gif',
-    '/assets/imgs/SkillCalculator/construction.png',
-    '/assets/imgs/SkillCalculator/default.png',
-    '/assets/imgs/SkillCalculator/updated-ui.gif',
-    '/assets/imgs/SkillCalculator/herblore-fallthrough.gif'
+  public images: Array<string[]> = [
+    ['/assets/imgs/SkillCalculator/default-ui.gif', 'Default UI look'],
+    ['/assets/imgs/SkillCalculator/updated-ui.gif', 'Updated UI look'],
+    ['/assets/imgs/SkillCalculator/herblore-fallthrough.gif', 'Activity toggle with linked items updating'],
+    ['/assets/imgs/SkillCalculator/agility.gif', 'Planner functionality with level limiting'],
+    ['/assets/imgs/SkillCalculator/construction.png', 'Banked Experience'],
   ];
   private album: Array<IAlbum> = [];
 
   constructor(
     private lightbox: Lightbox,
     private lightboxConfig: LightboxConfig) {
-    for (const img of this.images) {
-      this.album.push({src: img, thumb: img});
+    for (const image of this.images) {
+      console.log(image);
+      const img = image[0];
+      const caption = image.length > 1 ? image[1] : '';
+      this.album.push({src: img, thumb: img, caption});
     }
 
     // set default config
