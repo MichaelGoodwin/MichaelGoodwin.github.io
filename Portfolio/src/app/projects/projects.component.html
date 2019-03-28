@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="center-text">
+  <div class="text-center">
     <h2>Side Projects</h2>
   </div>
 
@@ -11,12 +11,13 @@
       class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 project"
     >
       <div class="card bg-dark">
-        <h4 class="card-title center-text">
+        <img class="card-img-top alt-text" [alt]="project.title" [src]="project.image"/>
+        <h4 class="card-title list-group-item text-center">
           {{ project.title }}
         </h4>
-        <img class="card-img-top alt-text" [alt]="project.title" [src]="project.image"/>
+        <hr/>
         <div class="card-body">
-          <p class="card-text center-text bold">
+          <p class="card-text text-center bold">
             {{ project.languages.join(", ") }}
           </p>
           <hr/>
@@ -24,7 +25,7 @@
             {{ project.description }}
           </p>
         </div>
-        <div class="card-footer center-text">
+        <div class="card-footer text-center">
           <a [routerLink]="['/project/' + project.id]" class="btn btn-success">View project</a>
         </div>
       </div>
