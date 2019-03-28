@@ -20,7 +20,6 @@ export class SkillCalculatorComponent implements OnInit, OnDestroy {
     private lightbox: Lightbox,
     private lightboxConfig: LightboxConfig) {
     for (const image of this.images) {
-      console.log(image);
       const img = image[0];
       const caption = image.length > 1 ? image[1] : '';
       this.album.push({src: img, thumb: img, caption});
@@ -38,7 +37,6 @@ export class SkillCalculatorComponent implements OnInit, OnDestroy {
   }
 
   open(index: number): void {
-    console.log(this.images[index]);
     this.lightbox.open(this.album, index);
   }
 

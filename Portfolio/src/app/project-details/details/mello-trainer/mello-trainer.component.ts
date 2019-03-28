@@ -35,7 +35,6 @@ export class MelloTrainerComponent implements OnInit, OnDestroy {
   }
 
   open(index: number): void {
-    console.log(this.images[index]);
     this.lightbox.open(this.album, index);
   }
 
