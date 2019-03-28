@@ -4,7 +4,7 @@ import { Lightbox, IAlbum, LightboxConfig } from 'ngx-lightbox';
 @Component({
   selector: 'app-mello-trainer',
   templateUrl: './mello-trainer.component.html',
-  styleUrls: ['./mello-trainer.component.css']
+  styleUrls: ['../details.css', './mello-trainer.component.css']
 })
 export class MelloTrainerComponent implements OnInit, OnDestroy {
   public images: string[] = [
