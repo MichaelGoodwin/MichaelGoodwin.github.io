@@ -8,7 +8,7 @@ const imageFolder = '/assets/imgs/';
 
 export default [
   new Project(MelloTrainerComponent, 'Mello Trainer', imageFolder + 'MelloTrainer/card.png', ['lua', 'html', 'css'],
-    'A FiveM (GTA 5) tool used to spawn vehicles/weapons, control the time & weather, and more customization'),
+    'A FiveM tool used to spawn vehicles/weapons, control the time & weather, and more customization'),
   new Project(RPDeathComponent, 'RPDeath',  imageFolder + 'RPDeath/card.png', ['lua'],
     'A FiveM script that prevents automatic respawning for role-playing purposes'),
   new Project(SkillCalculatorComponent, 'SkillCalculator', imageFolder + 'SkillCalculator/card.png', ['java'],
