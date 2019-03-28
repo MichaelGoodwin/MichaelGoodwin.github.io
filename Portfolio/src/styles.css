@@ -6,3 +6,12 @@ html, body, app-root {
   background: #1F1F1F;
   color: white;
 }
+
+body{
+  /* Required for bootstrap fixed navbar */
+  padding-top: 60px !important;
+}
+
+.width-container {
+  max-width: 1200px;
+}

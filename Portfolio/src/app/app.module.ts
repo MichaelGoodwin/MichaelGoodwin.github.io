@@ -10,6 +10,7 @@ import { ProjectContainerDirective } from './directives/project-container.direct
 import { ProjectDetailsModule } from './project-details/details/project-details.module';
 import { LightboxModule } from 'ngx-lightbox';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     ProjectContainerDirective,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
