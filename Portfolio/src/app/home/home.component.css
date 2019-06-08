@@ -1,0 +1,47 @@
+.container-fluid {
+  max-width: 1200px;
+}
+
+.fix-list{
+  list-style: none;
+}
+
+.fix-list a{
+  color: white;
+  padding-left: 5px;
+}
+
+.buttons .btn{
+  margin: 5px;
+}
+
+.media-links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.media-links a {
+  font-size: 36px;
+  background-color: #303030;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #000;
+  padding: 0.3em 0.4em;
+  margin: 6px;
+  color: white;
+  transition-duration: 500ms;
+}
+
+.media-links a:hover {
+  background-color: #606060;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .custom-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,40 @@
+<div class="sub-container">
+  <div class="text-center">
+    <h1 class>Mello Trainer!</h1>
+    <hr/>
+
+    <p>Mello Trainer is a <a href="https://fivem.net" target="_blank">FiveM</a> server-side trainer written in Lua with a UI written using HTML5, CSS, and JavaScript. A trainer is a generic tool used to do just about everything inside the GTA 5 world and are highly utilized inside the role-playing community.</p>
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn-success text-center" href="https://github.com/TheStonedTurtle/mellotrainer" target="_blank">View the source code</a>
+  </div>
+
+  <h1>Features</h1>
+  <ul>
+      <li>Admin Menu</li>
+      <li>Customizable access levels</li>
+      <li>Dynamic menu creation based on JSON</li>
+      <li>Online Players Menu w/ Spectate & Teleport Option</li>
+      <li>Player modifier Options (God Mode, Infinite stamina, etc)</li>
+      <li>Player Join/Leave Notifications</li>
+      <li>Player Death Messages</li>
+      <li>Player Skin Changing and Customization</li>
+      <li>Vehicle Spawning, Customization, and Modifications</li>
+      <li>Customizable Vehicle and Skin presets for players</li>
+      <li>Weapon Spawning & Attachments</li>
+      <li>Voice Overlay & Options</li>
+      <li>General settings (Hide Hud, Hide Map, Map blips)</li>
+      <li>No-clip abilities with admin-only toggle</li>
+      <li>Version check on startup</li>
+  </ul>
+
+  <h1>Gallery</h1>
+  <hr/>
+  <div class="image-gallery">
+    <div class="image-container" *ngFor="let image of images; let i=index">
+        <img [src]="image" (click)="open(i)"/>
+    </div>
+  </div>
+  <hr/>
+</div>

@@ -1,0 +1,31 @@
+<div class="sub-container">
+  <div class="text-center">
+    <h1 class>Loot Tracker</h1>
+    <hr/>
+
+    <p>For this project my goal was to create a plugin that tracked loot received from specific monsters and activities for the game <a href="https://oldschool.runescape.com" target="_blank">Old School RuneScape</a> using the <a href="https://www.runelite.net" target="_blank">RuneLite</a> client. Although my version was not implemented i helped implement the current version available in the default client, which was announced in <a href="https://runelite.net/blog/show/2018-08-02-1.4.10-Release" target="_blank">this blog post</a>. I also helped create the API used for the main client as the maintainers did not want to serialize/deserialize local data which i was doing by saving the loot into `.log` files.</p>
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn-success text-center" href="https://github.com/TheStonedTurtle/runelite/tree/StonedClient/runelite-client/src/main/java/net/runelite/client/plugins/stonedtracker" target="_blank">View the source code</a>
+  </div>
+
+  <h1>Boss Logger</h1>
+  <p>
+    The original name for this plugin was "Boss Logger" as it only supported specific monsters, which were considered by many to be the bosses of the game. This version started with a very rough UI and no layout customization and eventually morphed into the current UI design. Once we decided on including all in-game monsters and other players the name was changed to "Loot Tracker". You can view the <a href="https://github.com/runelite/runelite/pull/3545" target="_blank">Original PR</a> i created with this name <a href="https://github.com/runelite/runelite/pull/3545" target="_blank">here</a>.
+  </p>
+
+  <h3>Differences</h3>
+  <p>
+    The official Loot Tracker plugin can be viewed <a href="https://github.com/runelite/runelite/wiki/Loot-Tracker" target="_blank">here</a>, with the main difference being the UI. The functionality behind determining the loot received is identical but mine will also store data on local files and read from these files when displaying loot. I also added a replay system which cycles through the loot.
+  </p>
+
+  <h1>Gallery</h1>
+  <hr/>
+  <div class="image-gallery">
+    <div class="image-container" *ngFor="let image of images; let i=index">
+        <img [src]="image[0]" (click)="open(i)"/>
+    </div>
+  </div>
+  <hr/>
+</div>

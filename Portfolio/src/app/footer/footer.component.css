@@ -1,0 +1,14 @@
+.angular-red{
+  color: #b52e31
+}
+
+.fa-blue{
+  color: #339af0;
+}
+
+.bootstrap-icon{
+  background: url("https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg");
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+}

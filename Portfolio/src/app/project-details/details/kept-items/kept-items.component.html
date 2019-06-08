@@ -1,0 +1,29 @@
+<div class="sub-container">
+    <div class="text-center">
+      <h1 class>Kept Items</h1>
+      <hr/>
+
+      <p>
+        For this project my goal was to create a plugin that reworked the existing "Items Kept on Death" interface for <a href="https://oldschool.runescape.com" target="_blank">Old School RuneScape</a>. This was possible using the open sourced third-party client, <a href="https://www.runelite.net" target="_blank">RuneLite</a>. The company behind the game has since announced a rework to this entire system so the plugin was put on hold until we know if it's worth adding.
+      </p>
+    </div>
+  
+    <div class="text-center">
+      <a class="btn btn-success text-center" href="https://github.com/runelite/runelite/pull/6669/files" target="_blank">View the source code</a>
+    </div>
+
+    <h1>Purpose</h1>
+    <p>
+      The game servers for <a href="https://oldschool.runescape.com" target="_blank">Old School RuneScape</a> were experiencing targeted ddos attacks to ensure players would die and lose their items. To combat this issue the developers implemented a temporary death mechanic which has since been in place for over 3 years but they have not updated the in-game interfaces to reflect these changes. This plugin was meant to update this interface to more accurately display what will happen when your player dies. The interface was also updated to be interactive as there are different factors affecting items kept and the default interface looks at just the current factors affecting the player.
+    </p>
+  
+    <h1>Gallery</h1>
+    <hr/>
+    <div class="image-gallery">
+      <div class="image-container" *ngFor="let image of images; let i=index">
+          <img [src]="image[0]" (click)="open(i)"/>
+      </div>
+    </div>
+    <hr/>
+  </div>
+  
