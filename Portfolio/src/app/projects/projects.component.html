@@ -12,7 +12,7 @@
         *ngFor="let project of websiteProjects"
         class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 project"
       >
-        <div class="card bg-dark" [routerLink]="['/', project.name.replace(' ', '')]">
+        <div class="card bg-dark">
           <img class="card-img-top" [src]="project.image"/> 
 
           <ul class="list-group list-group-flush">
@@ -31,7 +31,7 @@
             </p>
           </div>
           <div class="card-footer text-center">
-            <a  [routerLink]="['/', project.name.replace(' ', '')]" class="btn btn-success">View project</a>
+            <a href="/MarsRovers/" target="_blank" class="btn btn-success">View website</a>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
         *ngFor="let project of getProjects(category)"
         class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 project"
       >
-        <div class="card bg-dark" [routerLink]="['/project/' + project.id]">
+        <div class="card bg-dark">
           <img class="card-img-top" [src]="project.image"/> 
 
           <ul class="list-group list-group-flush">
