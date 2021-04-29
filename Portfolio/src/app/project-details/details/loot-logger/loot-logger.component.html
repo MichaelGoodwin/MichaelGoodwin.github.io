@@ -1,0 +1,29 @@
+<div class="sub-container">
+  <div class="text-center">
+    <h1 class>Loot Logger</h1>
+	<a href="https://runelite.net/plugin-hub/TheStonedTurtle" target="_blank">
+		<img src="http://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/installs/plugin/loot-logger"/>
+	</a>
+    <hr/>
+
+    <p>
+		This project is a Java Plugin for the <a href="https://www.runelite.net" target="_blank">RuneLite</a> client, which is an open-sourced game client made for <a href="https://oldschool.runescape.com" target="_blank">Old School RuneScape</a>. This plugin logs the items, called loot, received from killing monsters or completing specific activities within the game to the player's local device. The data is stored utilizing the <a href="https://jsonlines.org/" target="_blank">JSON Lines</a> format, appending new entries to the existing file(s). The plugin also provides an optional user interface for viewing the stored data that was written using Java's Swing library.
+	</p>
+	
+	<p>
+		This plugin works in conjunction with the official Loot Tracker plugin, which can be found <a href="https://github.com/runelite/runelite/wiki/Loot-Tracker" target="_blank">here</a>.</p>
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn-success text-center" href="https://github.com/TheStonedTurtle/loot-logger" target="_blank">View the source code</a>
+  </div>
+
+  <h1>Gallery</h1>
+  <hr/>
+  <div class="image-gallery">
+    <div class="image-container" *ngFor="let image of images; let i=index">
+        <img [src]="image[0]" (click)="open(i)"/>
+    </div>
+  </div>
+  <hr/>
+</div>
