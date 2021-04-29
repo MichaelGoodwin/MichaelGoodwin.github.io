@@ -1,4 +1,4 @@
 export enum ProjectCategory {
-  FiveM = 'FiveM',
+  Other = 'Other',
   RuneLite = 'RuneLite'
 }
