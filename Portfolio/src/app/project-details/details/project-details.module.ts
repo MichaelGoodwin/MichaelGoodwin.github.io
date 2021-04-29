@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MelloTrainerComponent } from './mello-trainer/mello-trainer.component';
 import { RPDeathComponent } from './rpdeath/rpdeath.component';
-import { SkillCalculatorComponent } from './skill-calculator/skill-calculator.component';
+import { BankedExperienceComponent } from './banked-experience/banked-experience.component';
 import { LootTrackerComponent } from './loot-tracker/loot-tracker.component';
 
 @NgModule({
@@ -14,13 +14,13 @@ import { LootTrackerComponent } from './loot-tracker/loot-tracker.component';
   declarations: [
     MelloTrainerComponent,
     RPDeathComponent,
-    SkillCalculatorComponent,
+    BankedExperienceComponent,
     LootTrackerComponent
   ],
   entryComponents: [
     MelloTrainerComponent,
     RPDeathComponent,
-    SkillCalculatorComponent,
+    BankedExperienceComponent,
     LootTrackerComponent
   ]
 })

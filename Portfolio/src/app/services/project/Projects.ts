@@ -3,15 +3,15 @@ import { Project } from './Project';
 import { ProjectCategory } from './ProjectCategory';
 import { MelloTrainerComponent } from 'src/app/project-details/details/mello-trainer/mello-trainer.component';
 import { RPDeathComponent } from 'src/app/project-details/details/rpdeath/rpdeath.component';
-import { SkillCalculatorComponent } from 'src/app/project-details/details/skill-calculator/skill-calculator.component';
+import { BankedExperienceComponent } from 'src/app/project-details/details/banked-experience/banked-experience.component';
 import { LootTrackerComponent } from 'src/app/project-details/details/loot-tracker/loot-tracker.component';
 
 const imageFolder = '/assets/imgs/';
 
 export default [
-  new Project(SkillCalculatorComponent, 'SkillCalculator', ProjectCategory.RuneLite, imageFolder + 'SkillCalculator/card.png', ['java'],
-    'Expands upon the existing "SkillCalculator" plugin by adding Planner and Banked Experience functionality'),
-  new Project(LootTrackerComponent, 'Loot Tracker', ProjectCategory.RuneLite, imageFolder + 'LootTracker/card.png', ['java'],
+  new Project(BankedExperienceComponent, 'Banked Experience', ProjectCategory.RuneLite, imageFolder + 'BankedExperience/card.png', ['java', 'swing', 'gradle'],
+    'Calculates the experience a player has stored from the items inside their bank.'),
+  new Project(LootTrackerComponent, 'Loot Tracker', ProjectCategory.RuneLite, imageFolder + 'LootTracker/card.png', ['java', 'swing', 'gradle'],
     'Records loot received from monsters, players, and activities and displays it in a side panel'),
 
   new Project(MelloTrainerComponent, 'Mello Trainer', ProjectCategory.FiveM, imageFolder + 'MelloTrainer/card.png', ['lua', 'html', 'css'],

@@ -1,0 +1,26 @@
+<div class="sub-container">
+  <div class="text-center">
+    <h1 class>Banked Experience</h1>
+	<a href="https://runelite.net/plugin-hub/TheStonedTurtle" target="_blank">
+		<img src="http://img.shields.io/endpoint?url=https://i.pluginhub.info/shields/installs/plugin/banked-experience"/>
+	</a>
+    <hr/>
+
+    <p>
+		This project is a Java plugin for the <a href="https://www.runelite.net" target="_blank">RuneLite</a> client, which is an open-sourced game client made for <a href="https://oldschool.runescape.com" target="_blank">Old School RuneScape</a>. This plugin automates the calculation of experience a player would received based on the items they have accumulated in their bank. This is accomplished by reading the contents of the players bank and displaying the results within a user interface written with the Java Swing library. This UI also provides a way for the player to customize the functionality of the plugin, such as ignoring specific items. 
+	</p>
+  </div>
+
+  <div class="text-center">
+    <a class="btn btn-success text-center" href="https://github.com/TheStonedTurtle/banked-experience" target="_blank">View the source code</a>
+  </div>
+
+  <h1>Gallery</h1>
+  <hr/>
+  <div class="image-gallery">
+    <div class="image-container" *ngFor="let image of images; let i=index">
+        <img [src]="image[0]" (click)="open(i)"/>
+    </div>
+  </div>
+  <hr/>
+</div>

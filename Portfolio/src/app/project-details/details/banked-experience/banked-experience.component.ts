@@ -2,17 +2,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { IAlbum, Lightbox, LightboxConfig } from 'ngx-lightbox';
 
 @Component({
-  selector: 'app-skill-calculator',
-  templateUrl: './skill-calculator.component.html',
-  styleUrls: ['../details.css', './skill-calculator.component.css']
+  selector: 'app-banked-experience',
+  templateUrl: './banked-experience.component.html',
+  styleUrls: ['../details.css', './banked-experience.component.css']
 })
-export class SkillCalculatorComponent implements OnInit, OnDestroy {
+export class BankedExperienceComponent implements OnInit, OnDestroy {
   public images: Array<string[]> = [
-    ['/assets/imgs/SkillCalculator/default-ui.gif', 'Default UI look'],
-    ['/assets/imgs/SkillCalculator/updated-ui.gif', 'Updated UI look'],
-    ['/assets/imgs/SkillCalculator/herblore-fallthrough.gif', 'Activity toggle with linked items updating'],
-    ['/assets/imgs/SkillCalculator/agility.gif', 'Planner functionality with level limiting'],
-    ['/assets/imgs/SkillCalculator/construction.png', 'Banked Experience'],
+    ['/assets/imgs/BankedExperience/config.png', 'Configuration Options'],
+    ['/assets/imgs/BankedExperience/ui.gif', 'UI Design and functionality'],
+    ['/assets/imgs/BankedExperience/herblore.png', 'Example of a calculated skill'],
   ];
   private album: Array<IAlbum> = [];
 
