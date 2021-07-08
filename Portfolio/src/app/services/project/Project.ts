@@ -10,8 +10,10 @@ export class Project {
   languages: string[];
   templateUrl: string;
   description: string;
+  url: string;
 
-  constructor(component: Type<any>, title: string, category: ProjectCategory, image: string, languages: string[], description: string) {
+  constructor(component: Type<any>, title: string, category: ProjectCategory,
+              image: string, languages: string[], description: string, url: string) {
     this.component = component;
     this.title = title;
     this.id = title.toLowerCase().replace(' ', '-');
@@ -19,5 +21,6 @@ export class Project {
     this.image = image;
     this.languages = languages;
     this.description = description;
+    this.url = url;
   }
 }

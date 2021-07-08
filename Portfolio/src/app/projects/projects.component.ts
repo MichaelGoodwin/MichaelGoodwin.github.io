@@ -12,7 +12,9 @@ export class ProjectsComponent implements OnInit {
   categories: Array<ProjectCategory>;
   websiteProjects: Array<Project> = [
     new Project(null, 'Mars Rovers', null, './assets/imgs/MarsRovers/card.png', ['Angular', 'JavaScript', 'TypeScript', 'HTML', 'CSS'],
-    'A website to explore the images the rovers exploring mars have taken')
+    'A website to explore the images the rovers exploring mars have taken', '/MarsRovers/'),
+    new Project(null, 'Plugin Hub Info', null, './assets/imgs/PluginHubInfo/card.png', ['Python', 'Flask', 'HTML', 'CSS', 'Bootstrap'],
+    'Consolidates RuneLite Plugin Hub Stats and provides an API for generating README shields', 'https://www.pluginhub.info')
   ];
 
   constructor(private projectService: ProjectService) {

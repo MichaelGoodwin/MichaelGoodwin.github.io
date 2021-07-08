@@ -8,7 +8,7 @@ const imageFolder = '/assets/imgs/';
 
 export default [
   new Project(BankedExperienceComponent, 'Banked Experience', ProjectCategory.RuneLite, imageFolder + 'BankedExperience/card.png', ['java', 'swing', 'gradle'],
-    'Calculates the experience a player has stored from the items inside their bank.'),
+    'Calculates the experience a player has stored from the items inside their bank.', null),
   new Project(LootLoggerComponent, 'Loot Tracker', ProjectCategory.RuneLite, imageFolder + 'LootLogger/card.png', ['java', 'swing', 'gradle'],
-    'Logs loot received from monsters, players, and activities to the local device.'),
+    'Logs loot received from monsters, players, and activities to the local device.', null),
 ];
